@@ -1,0 +1,37 @@
+#跳过具有如下标签的文件件与文件
+*wmtag_memo_git_do_not_commit_this*
+*wmtag_memo_git_do_not_commit_this*/
+# 跳过所有的8042开头的临时文件夹
+/*8042*wmtemp*/
+*8042*wmtemp*/
+
+#这里是短格式
+#跳过具有如下标签的文件夹与文件
+*wmgitignore*
+*wmgitignore*/
+
+### git commit 保存 VS Code 文件夹等 ###
+!.vscode/
+!.vscode
+
+# 一定要保留go mod的定义文件
+!go.mod
+
+# 一定要保留go work的定义文件
+!go.work
+
+#这里是go build等输出的可执行文件的特征值
+*wmbin_go_out*
+*wmbin_go_out*/
+
+#这里是各种build等输出的可执行文件的特征值
+*wmbin_out*
+*wmbin_out*/
+
+/temp
+
+*.mp3
+*.mp4
+*.wav
+*.wma
+
